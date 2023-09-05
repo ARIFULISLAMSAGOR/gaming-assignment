@@ -145,12 +145,44 @@ align-items: center;
 }
 .rectangle-11:hover{
     background-color: aqua;
-    border: 40px;
+    border: 2px solid gray;
     border-radius: 10px;
+    padding: 3px;
 }
 .third-section{
     margin: 130px 230px;
     display: grid;
     grid-template-columns:  repeat(5,1fr);
     grid-gap: 20px;
+}
+.footer{
+    background-color: black;
+    padding-bottom: 50px;
+}
+#footer-frame{
+  justify-content: center;
+  margin-bottom: -50px;
+}
+.white{
+    color: white;
+}
+.footer-text{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: white;
+}
+.footer-term{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color:lightgray;  
+}
+.copyright{
+    text-align: center;
+    color: darkgray;
 }
