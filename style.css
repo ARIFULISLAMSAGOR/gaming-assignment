@@ -52,6 +52,10 @@ color: #FF42A5;
     margin-top: -5px;
     margin-bottom: 0px;
 }
+.bg-banner{
+    fill: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 3.9%, rgba(241, 68, 174, 0.03) 100.56%);
+    color:#8C57EE0D, #F144AE0D;
+}
 .banner>ul{
     margin-top: 0px;
 }
@@ -91,30 +95,37 @@ color: #FF42A5;
     width: 250px;
 }
 
-/* .video-container{
+ .image-container{
     position: relative;
-    display: inline-block;
-}
-.play-button{
+ }
+.play-btn{
     position: absolute;
-    background-image: url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
-    background-repeat: no-repeat;
+    display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border-radius: 1px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 60px;
+    height: 30px;
+    background:transparen;
+    border-radius:10px ;
     cursor: pointer;
-    z-index: 2;
-} */
-
+    color:white;
+    
+} 
+.play-btn:focus{
+    outline: none;
+    opacity: 0;
+}
+.play-btn.clicked+img{
+    opacity: 1;
+    background-color: black;
+    background-image: black;
+}
+.play-btn:hover{
+    display: block;
+    opacity: 1;
+    background-color: black;
+}
 .instant-part{
     display: flex;
     margin-left: 300px;
@@ -148,6 +159,7 @@ align-items: center;
     border: 2px solid gray;
     border-radius: 10px;
     padding: 3px;
+    color: tomato;
 }
 .third-section{
     margin: 130px 230px;
@@ -185,4 +197,49 @@ align-items: center;
 .copyright{
     text-align: center;
     color: darkgray;
+}
+
+@media screen and (max-width:576px) {
+    .nav {
+        flex-direction: column;
+        margin-right: -400px;
+        align-items: center;
+        
+    }
+    .nav-text{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+        margin:10px;
+        
+        align-items: center;
+        padding-left: 300px;    
+    }
+    .online-text{
+        padding-left: 200px;
+    }
+    .online-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .instant-part{
+        flex-direction: column;
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+    .reactangle-66 img{
+        margin-left: 0px;
+        padding-left: 50px;
+    }
+    .third-section,.footer-text{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer{
+        width: 800px;
+    }
+    .footer-term{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
 }
